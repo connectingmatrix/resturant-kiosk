@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="Gymove - Fitness Admin Dashboard Template" />
+    <meta property="og:title" content="Gymove - Fitness Admin Dashboard Template" />
+    <meta property="og:description" content="Gymove - Fitness Admin Dashboard Template" />
+    <meta property="og:image" content="" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="welcome/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="welcome/images/favicon.png" />
+
+    <!-- PAGE TITLE HERE -->
+    <title>Resturant Ordering System</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="welcome/css/plugins.min.css">
+    <link rel="stylesheet" type="text/css" href="welcome/plugins/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="welcome/plugins/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="welcome/plugins/themify/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="welcome/css/style.css">
+    <link rel="stylesheet" type="text/css" href="welcome/css/templete.css">
+    <link class="skin" rel="stylesheet" type="text/css" href="welcome/css/skin/skin-1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <style>
+        .core-features:hover {
+            cursor: pointer !important;
+        }
+    </style>
+</head>
+
+<body id="bg">
+    <div class="page-wraper">
+        <div class="onepage"></div>
+        <div id="loading-area">
+            <div class="la-anim-10"></div>
+        </div>
+        <div class="page-content bg-white" style="padding-bottom: 0px;">
+            <!-- Step 1-->
+            <div class="section-full bg-white bg-img-fix content-inner step1" style="height: 50vh;" id="demo">
+                <div class="container-fluid">
+                    <div class="section-head title-box content-center" data-name="Dashboard">
+                        <img src="/imgs/resturan.png"
+                            style="width: 30vh !important; transform: scale(1.5);display: block;margin-left: auto;margin-right: auto;" />
+                        <!-- <p>Thype comes with multiple templates with a terrific attention to details & fully responsive.</p> -->
+                        <!-- <div class="bg-primary dlab-separator"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="section-full theme-footer text-white step1" style="background-image:url(/imgs/grill.png);background-position: bottom; background-size: cover;     padding-top: 21%;
+                padding-bottom: 20%;margin-top: 3%; height: 48vh;">
+                <div class="container-fluid text-center">
+                    <div class="news-letter">
+                        <div class="subscribe-form m-b20">
+                            <form class="dzSubscribe dezPlaceAni" action="welcome/script/mailchamp.php.html"
+                                method="post">
+                                <div class="dzSubscribeMsg"></div>
+                                <div class="input-group">
+                                    <label>Customer Id (If Previous Customer)</label>
+                                    <input name="dzEmail" required="required" class="form-control" placeholder=""
+                                        type="email">
+                                    <span class="input-group-btn">
+                                        <button name="submit" value="Submit" type="submit"
+                                            class="site-button radius-xl">Submit</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" id="orderNow">
+                        <div class="requirement">
+                            <h2>Order <span>Here</span></h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Step 2-->
+
+
+            <div class="section-full bg-gray content-inner choose-us step2" style="display: none;" id="features">
+                <div class="container-fluid">
+                    <div class="wl-bynw" style="position: absolute;top: 2%;">
+                        <a href="/index2.html" class="site-button shadow radius-xl">Main Menu</a>
+                    </div>
+                    <div class="wl-bynw checkout" style=" position: absolute;top: 2%;right: 3%;">
+                        <a href="javascript:void(0)" class="site-button shadow radius-xl">Check Out</a>
+                    </div>
+                    <div class="section-head title-box text-center" data-name="Gymove">
+                        <h2>SELECT CATEGORIES</h2>
+                        <div class="bg-primary dlab-separator"></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/1.jpeg" alt="">
+                                </div>
+                                <h3>Burger & Fries</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/2.jpeg" alt="">
+                                </div>
+                                <h3>Salads</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/3.jpeg" alt="">
+                                </div>
+                                <h3>BREAKFAST</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/4.jpeg" alt="">
+                                </div>
+                                <h3>Premium Burger</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/5.jpeg" alt="">
+                                </div>
+                                <h3>Wings</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/6.jpeg" alt="">
+                                </div>
+                                <h3>Hot Wings</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/7.jpeg" alt="">
+                                </div>
+                                <h3>Premium Corn</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/8.jpeg" alt="">
+                                </div>
+                                <h3>Garlic Bread</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/9.jpeg" alt="">
+                                </div>
+                                <h3>Drinks</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/1.jpeg" alt="">
+                                </div>
+                                <h3>Burger & Fries</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/2.jpeg" alt="">
+                                </div>
+                                <h3>Salads</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/3.jpeg" alt="">
+                                </div>
+                                <h3>Coffee & Tea</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/4.jpeg" alt="">
+                                </div>
+                                <h3>Premium Burger</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/5.jpeg" alt="">
+                                </div>
+                                <h3>Fried Chicken</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/6.jpeg" alt="">
+                                </div>
+                                <h3>Top Pops</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/7.jpeg" alt="">
+                                </div>
+                                <h3>Premium Corn</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/8.jpeg" alt="">
+                                </div>
+                                <h3>Garlic Bread</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                            <div class="core-features">
+                                <div class="circle">
+                                    <img src="/imgs/9.jpeg" alt="">
+                                </div>
+                                <h3>Drinks</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-right">
+                        <a href="#SupportSection" class="need-any-help"><img src="welcome/images/support.png"
+                                alt="">Need Any Help Link</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="section-full bg-gray content-inner choose-us step3" style="display: none;" id="features">
+                <div class="container-fluid">
+                    <div class="wl-bynw" style="position: absolute;top: 2%;">
+                        <a href="javascript:void(0)" class="site-button shadow radius-xl step3-back">
+                            &longleftarrow;</a>
+                    </div>
+                    <div class="wl-bynw checkout" style=" position: absolute;top: 2%;right: 3%;">
+                        <a href="javascript:void(0)" class="site-button shadow radius-xl">Check Out</a>
+                    </div>
+                    <div class="row" style="margin-top: 7%;">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-header d-block pb-0 border-0">
+                                            <div class="d-sm-flex flex-wrap align-items-center d-block mb-md-3 mb-0">
+                                                <div class="mr-auto pr-3 mb-3">
+                                                    <h4 class="text-black fs-20">Sub Menu</h4>
+                                                    <p class="fs-13 mb-0 text-black">Lorem ipsum dolor sit amet,
+                                                        consectetur</p>
+                                                </div>
+                                                <div class="input-group mb-3 diet-search mr-4">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Search Menus here">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="button"><i
+                                                                class="fa fa-search" aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn rounded  btn-primary mb-3">
+                                                    <svg class="mr-2" width="25" height="24" viewBox="0 0 25 24"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.31615 6H14.4744C14.4744 6.53043 14.6882 7.03914 15.0686 7.41421C15.4491 7.78929 15.9651 8 16.5032 8H18.532C19.07 8 19.5861 7.78929 19.9665 7.41421C20.347 7.03914 20.5607 6.53043 20.5607 6H21.5751C21.8442 6 22.1022 5.89464 22.2924 5.70711C22.4827 5.51957 22.5895 5.26522 22.5895 5C22.5895 4.73478 22.4827 4.48043 22.2924 4.29289C22.1022 4.10536 21.8442 4 21.5751 4H20.5607C20.5607 3.46957 20.347 2.96086 19.9665 2.58579C19.5861 2.21071 19.07 2 18.532 2H16.5032C15.9651 2 15.4491 2.21071 15.0686 2.58579C14.6882 2.96086 14.4744 3.46957 14.4744 4H3.31615C3.04711 4 2.7891 4.10536 2.59887 4.29289C2.40863 4.48043 2.30176 4.73478 2.30176 5C2.30176 5.26522 2.40863 5.51957 2.59887 5.70711C2.7891 5.89464 3.04711 6 3.31615 6ZM16.5032 4H18.532V5V6H16.5032V4ZM21.5751 11H12.4456C12.4456 10.4696 12.2319 9.96086 11.8514 9.58579C11.471 9.21071 10.9549 9 10.4169 9H8.38809C7.85002 9 7.334 9.21071 6.95353 9.58579C6.57306 9.96086 6.35931 10.4696 6.35931 11H3.31615C3.04711 11 2.7891 11.1054 2.59887 11.2929C2.40863 11.4804 2.30176 11.7348 2.30176 12C2.30176 12.2652 2.40863 12.5196 2.59887 12.7071C2.7891 12.8946 3.04711 13 3.31615 13H6.35931C6.35931 13.5304 6.57306 14.0391 6.95353 14.4142C7.334 14.7893 7.85002 15 8.38809 15H10.4169C10.9549 15 11.471 14.7893 11.8514 14.4142C12.2319 14.0391 12.4456 13.5304 12.4456 13H21.5751C21.8442 13 22.1022 12.8946 22.2924 12.7071C22.4827 12.5196 22.5895 12.2652 22.5895 12C22.5895 11.7348 22.4827 11.4804 22.2924 11.2929C22.1022 11.1054 21.8442 11 21.5751 11ZM8.38809 13V11H10.4169V12V13H8.38809ZM21.5751 18H18.532C18.532 17.4696 18.3182 16.9609 17.9378 16.5858C17.5573 16.2107 17.0413 16 16.5032 16H14.4744C13.9364 16 13.4203 16.2107 13.0399 16.5858C12.6594 16.9609 12.4456 17.4696 12.4456 18H3.31615C3.04711 18 2.7891 18.1054 2.59887 18.2929C2.40863 18.4804 2.30176 18.7348 2.30176 19C2.30176 19.2652 2.40863 19.5196 2.59887 19.7071C2.7891 19.8946 3.04711 20 3.31615 20H12.4456C12.4456 20.5304 12.6594 21.0391 13.0399 21.4142C13.4203 21.7893 13.9364 22 14.4744 22H16.5032C17.0413 22 17.5573 21.7893 17.9378 21.4142C18.3182 21.0391 18.532 20.5304 18.532 20H21.5751C21.8442 20 22.1022 19.8946 22.2924 19.7071C22.4827 19.5196 22.5895 19.2652 22.5895 19C22.5895 18.7348 22.4827 18.4804 22.2924 18.2929C22.1022 18.1054 21.8442 18 21.5751 18ZM14.4744 20V18H16.5032V19V20H14.4744Z"
+                                                            fill="#fff"></path>
+                                                    </svg>Filter
+                                                </a>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn btn-warning mr-3 mb-2">Recomended
+                                                for you</a>
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-warning light mr-3 mb-2">Salad</a>
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-warning light mr-3 mb-2">Breakfast</a>
+                                            <a href="javascript:void(0)" class="btn btn-warning light mb-2">Lunch</a>
+                                        </div>
+                                        <div class="card-body loadmore-content dz-scroll height750 ps ps--active-y"
+                                            id="DietMenusContent">
+                                            <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
+                                                <div class="row">
+                                                    <a href=""><img class="rounded mr-3 mb-md-0 mb-3 "
+                                                            src="imgs/4.jpeg" alt="" width="120"></a>
+                                                    <div class="media-body col-lg-8 pl-0">
+                                                        <h6 class="fs-16 font-w600"><a href="" class="text-black">Burger
+                                                                & Fries</a></h6>
+                                                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing
+                                                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                            magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media-body col-lg-8 pl-0">
+                                                    <div class="d-flex flex-wrap align-items-center">
+                                                        <div
+                                                            class="d-flex mb-sm-2 mb-3 pr-3 mr-auto align-items-center">
+                                                            <img src="/imgs/fire.png" alt="" width="30"
+                                                                class="rounded-circle mr-2">
+                                                            <span class="fs-14 text-black font-w500">Cheff
+                                                                Special</span>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap mb-sm-0 mb-2">
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-clock scale5 mr-2"></i><span
+                                                                    class="fs-14 text-black text-nowrap font-w500">10-15
+                                                                    mins </span></li>
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-prescription-bottle scale5 mr-2"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">5
+                                                                    Ingridients</span></li>
+                                                            <li class="text-nowrap mb-2"><i
+                                                                    class="fa fa-star-o mr-2 scale5 text-warning"
+                                                                    aria-hidden="true"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">568
+                                                                    Reviews</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <a href="javascript:void(0);" data-toggle="modal"
+                                                    data-target="#aAddDietMenus"
+                                                    class="addToCart btn btn-primary light btn-md ml-auto"><i
+                                                        class="fa fa-plus scale5 mr-3"></i>Add Menu</a>
+                                            </div>
+                                            <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
+                                                <div class="row">
+                                                    <a href=""><img class="rounded mr-3 mb-md-0 mb-3 "
+                                                            src="imgs/4.jpeg" alt="" width="120"></a>
+                                                    <div class="media-body col-lg-8 pl-0">
+                                                        <h6 class="fs-16 font-w600"><a href="" class="text-black">Burger
+                                                                & Fries</a></h6>
+                                                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing
+                                                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                            magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media-body col-lg-8 pl-0">
+                                                    <div class="d-flex flex-wrap align-items-center">
+                                                        <div
+                                                            class="d-flex mb-sm-2 mb-3 pr-3 mr-auto align-items-center">
+                                                            <img src="/imgs/fire.png" alt="" width="30"
+                                                                class="rounded-circle mr-2">
+                                                            <span class="fs-14 text-black font-w500">Cheff
+                                                                Special</span>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap mb-sm-0 mb-2">
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-clock scale5 mr-2"></i><span
+                                                                    class="fs-14 text-black text-nowrap font-w500">10-15
+                                                                    mins </span></li>
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-prescription-bottle scale5 mr-2"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">5
+                                                                    Ingridients</span></li>
+                                                            <li class="text-nowrap mb-2"><i
+                                                                    class="fa fa-star-o mr-2 scale5 text-warning"
+                                                                    aria-hidden="true"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">568
+                                                                    Reviews</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <a href="javascript:void(0);" data-toggle="modal"
+                                                    data-target="#aAddDietMenus"
+                                                    class="addToCart btn btn-primary light btn-md ml-auto"><i
+                                                        class="fa fa-plus scale5 mr-3"></i>Add Menu</a>
+                                            </div>
+                                            <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
+                                                <div class="row">
+                                                    <a href=""><img class="rounded mr-3 mb-md-0 mb-3 "
+                                                            src="imgs/4.jpeg" alt="" width="120"></a>
+                                                    <div class="media-body col-lg-8 pl-0">
+                                                        <h6 class="fs-16 font-w600"><a href="" class="text-black">Burger
+                                                                & Fries</a></h6>
+                                                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing
+                                                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                            magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media-body col-lg-8 pl-0">
+                                                    <div class="d-flex flex-wrap align-items-center">
+                                                        <div
+                                                            class="d-flex mb-sm-2 mb-3 pr-3 mr-auto align-items-center">
+                                                            <img src="/imgs/fire.png" alt="" width="30"
+                                                                class="rounded-circle mr-2">
+                                                            <span class="fs-14 text-black font-w500">Cheff
+                                                                Special</span>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap mb-sm-0 mb-2">
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-clock scale5 mr-2"></i><span
+                                                                    class="fs-14 text-black text-nowrap font-w500">10-15
+                                                                    mins </span></li>
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-prescription-bottle scale5 mr-2"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">5
+                                                                    Ingridients</span></li>
+                                                            <li class="text-nowrap mb-2"><i
+                                                                    class="fa fa-star-o mr-2 scale5 text-warning"
+                                                                    aria-hidden="true"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">568
+                                                                    Reviews</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <a href="javascript:void(0);" data-toggle="modal"
+                                                    data-target="#aAddDietMenus"
+                                                    class="addToCart btn btn-primary light btn-md ml-auto"><i
+                                                        class="fa fa-plus scale5 mr-3"></i>Add Menu</a>
+                                            </div>
+                                            <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
+                                                <div class="row">
+                                                    <a href=""><img class="rounded mr-3 mb-md-0 mb-3 "
+                                                            src="imgs/4.jpeg" alt="" width="120"></a>
+                                                    <div class="media-body col-lg-8 pl-0">
+                                                        <h6 class="fs-16 font-w600"><a href="" class="text-black">Burger
+                                                                & Fries</a></h6>
+                                                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing
+                                                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                            magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media-body col-lg-8 pl-0">
+                                                    <div class="d-flex flex-wrap align-items-center">
+                                                        <div
+                                                            class="d-flex mb-sm-2 mb-3 pr-3 mr-auto align-items-center">
+                                                            <img src="/imgs/fire.png" alt="" width="30"
+                                                                class="rounded-circle mr-2">
+                                                            <span class="fs-14 text-black font-w500">Cheff
+                                                                Special</span>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap mb-sm-0 mb-2">
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-clock scale5 mr-2"></i><span
+                                                                    class="fs-14 text-black text-nowrap font-w500">10-15
+                                                                    mins </span></li>
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-prescription-bottle scale5 mr-2"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">5
+                                                                    Ingridients</span></li>
+                                                            <li class="text-nowrap mb-2"><i
+                                                                    class="fa fa-star-o mr-2 scale5 text-warning"
+                                                                    aria-hidden="true"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">568
+                                                                    Reviews</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <a href="javascript:void(0);" data-toggle="modal"
+                                                    data-target="#aAddDietMenus"
+                                                    class="addToCart btn btn-primary light btn-md ml-auto"><i
+                                                        class="fa fa-plus scale5 mr-3"></i>Add Menu</a>
+                                            </div>
+                                            <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
+                                                <div class="row">
+                                                    <a href=""><img class="rounded mr-3 mb-md-0 mb-3 "
+                                                            src="imgs/4.jpeg" alt="" width="120"></a>
+                                                    <div class="media-body col-lg-8 pl-0">
+                                                        <h6 class="fs-16 font-w600"><a href="" class="text-black">Burger
+                                                                & Fries</a></h6>
+                                                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing
+                                                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                            magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media-body col-lg-8 pl-0">
+                                                    <div class="d-flex flex-wrap align-items-center">
+                                                        <div
+                                                            class="d-flex mb-sm-2 mb-3 pr-3 mr-auto align-items-center">
+                                                            <img src="/imgs/fire.png" alt="" width="30"
+                                                                class="rounded-circle mr-2">
+                                                            <span class="fs-14 text-black font-w500">Cheff
+                                                                Special</span>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap mb-sm-0 mb-2">
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-clock scale5 mr-2"></i><span
+                                                                    class="fs-14 text-black text-nowrap font-w500">10-15
+                                                                    mins </span></li>
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-prescription-bottle scale5 mr-2"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">5
+                                                                    Ingridients</span></li>
+                                                            <li class="text-nowrap mb-2"><i
+                                                                    class="fa fa-star-o mr-2 scale5 text-warning"
+                                                                    aria-hidden="true"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">568
+                                                                    Reviews</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <a href="javascript:void(0);" data-toggle="modal"
+                                                    data-target="#aAddDietMenus"
+                                                    class="addToCart btn btn-primary light btn-md ml-auto"><i
+                                                        class="fa fa-plus scale5 mr-3"></i>Add Menu</a>
+                                            </div>
+                                            <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
+                                                <div class="row">
+                                                    <a href=""><img class="rounded mr-3 mb-md-0 mb-3 "
+                                                            src="imgs/4.jpeg" alt="" width="120"></a>
+                                                    <div class="media-body col-lg-8 pl-0">
+                                                        <h6 class="fs-16 font-w600"><a href="" class="text-black">Burger
+                                                                & Fries</a></h6>
+                                                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing
+                                                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                            magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media-body col-lg-8 pl-0">
+                                                    <div class="d-flex flex-wrap align-items-center">
+                                                        <div
+                                                            class="d-flex mb-sm-2 mb-3 pr-3 mr-auto align-items-center">
+                                                            <img src="/imgs/fire.png" alt="" width="30"
+                                                                class="rounded-circle mr-2">
+                                                            <span class="fs-14 text-black font-w500">Cheff
+                                                                Special</span>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap mb-sm-0 mb-2">
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-clock scale5 mr-2"></i><span
+                                                                    class="fs-14 text-black text-nowrap font-w500">10-15
+                                                                    mins </span></li>
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-prescription-bottle scale5 mr-2"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">5
+                                                                    Ingridients</span></li>
+                                                            <li class="text-nowrap mb-2"><i
+                                                                    class="fa fa-star-o mr-2 scale5 text-warning"
+                                                                    aria-hidden="true"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">568
+                                                                    Reviews</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <a href="javascript:void(0);" data-toggle="modal"
+                                                    data-target="#aAddDietMenus"
+                                                    class="addToCart btn btn-primary light btn-md ml-auto"><i
+                                                        class="fa fa-plus scale5 mr-3"></i>Add Menu</a>
+                                            </div>
+                                            <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
+                                                <div class="row">
+                                                    <a href=""><img class="rounded mr-3 mb-md-0 mb-3 "
+                                                            src="imgs/4.jpeg" alt="" width="120"></a>
+                                                    <div class="media-body col-lg-8 pl-0">
+                                                        <h6 class="fs-16 font-w600"><a href="" class="text-black">Burger
+                                                                & Fries</a></h6>
+                                                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing
+                                                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                            magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media-body col-lg-8 pl-0">
+                                                    <div class="d-flex flex-wrap align-items-center">
+                                                        <div
+                                                            class="d-flex mb-sm-2 mb-3 pr-3 mr-auto align-items-center">
+                                                            <img src="/imgs/fire.png" alt="" width="30"
+                                                                class="rounded-circle mr-2">
+                                                            <span class="fs-14 text-black font-w500">Cheff
+                                                                Special</span>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap mb-sm-0 mb-2">
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-clock scale5 mr-2"></i><span
+                                                                    class="fs-14 text-black text-nowrap font-w500">10-15
+                                                                    mins </span></li>
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-prescription-bottle scale5 mr-2"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">5
+                                                                    Ingridients</span></li>
+                                                            <li class="text-nowrap mb-2"><i
+                                                                    class="fa fa-star-o mr-2 scale5 text-warning"
+                                                                    aria-hidden="true"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">568
+                                                                    Reviews</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <a href="javascript:void(0);" data-toggle="modal"
+                                                    data-target="#aAddDietMenus"
+                                                    class="addToCart btn btn-primary light btn-md ml-auto"><i
+                                                        class="fa fa-plus scale5 mr-3"></i>Add Menu</a>
+                                            </div>
+                                            <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
+                                                <div class="row">
+                                                    <a href=""><img class="rounded mr-3 mb-md-0 mb-3 "
+                                                            src="imgs/4.jpeg" alt="" width="120"></a>
+                                                    <div class="media-body col-lg-8 pl-0">
+                                                        <h6 class="fs-16 font-w600"><a href="" class="text-black">Burger
+                                                                & Fries</a></h6>
+                                                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing
+                                                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                                            magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media-body col-lg-8 pl-0">
+                                                    <div class="d-flex flex-wrap align-items-center">
+                                                        <div
+                                                            class="d-flex mb-sm-2 mb-3 pr-3 mr-auto align-items-center">
+                                                            <img src="/imgs/fire.png" alt="" width="30"
+                                                                class="rounded-circle mr-2">
+                                                            <span class="fs-14 text-black font-w500">Cheff
+                                                                Special</span>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap mb-sm-0 mb-2">
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-clock scale5 mr-2"></i><span
+                                                                    class="fs-14 text-black text-nowrap font-w500">10-15
+                                                                    mins </span></li>
+                                                            <li class="mb-2 mr-4 text-nowrap"><i
+                                                                    class="las la-prescription-bottle scale5 mr-2"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">5
+                                                                    Ingridients</span></li>
+                                                            <li class="text-nowrap mb-2"><i
+                                                                    class="fa fa-star-o mr-2 scale5 text-warning"
+                                                                    aria-hidden="true"></i><span
+                                                                    class="text-nowrap fs-14 text-black font-w500">568
+                                                                    Reviews</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <a href="javascript:void(0);" data-toggle="modal"
+                                                    data-target="#aAddDietMenus"
+                                                    class="addToCart btn btn-primary light btn-md ml-auto"><i
+                                                        class="fa fa-plus scale5 mr-3"></i>Add Menu</a>
+                                            </div>
+
+                                            <!-- <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                                <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;">
+                                                </div>
+                                            </div>
+                                            <div class="ps__rail-y" style="top: 0px; height: 750px; right: 0px;">
+                                                <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 579px;">
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="card-footer style-1 text-center border-0 pt-0 pb-4">
+                                            <a class="text-primary dz-load-more fa fa-chevron-down" id="DietMenus"
+                                                href="javascript:void(0);" rel="ajax/food-menu-list.html">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  Step 4 -->
+            <div class="section-full bg-gray content-inner choose-us step4" style="display: none;" id="features">
+                <div class="container-fluid">
+                    <div class="wl-bynw" style="position: absolute;top: 2%;">
+                        <a href="javascript:void(0)" class="site-button shadow radius-xl step4-back">&longleftarrow;</a>
+                    </div>
+                    <div class="wl-bynw order-confirm" style=" position: absolute;top: 2%;right: 3%;">
+                        <a href="javascript:void(0)" class="site-button shadow radius-xl">Order</a>
+                    </div>
+                    <div style="margin-top: 7%;" class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 order-md-2 mb-4">
+                                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="text-muted">Cart</span>
+                                                <span class="text-muted ">$<span class="totalBill"></span></span>
+                                                <span class="badge badge-primary badge-pill">3</span>
+                                            </h4>
+                                            <ul class="list-group mb-3">
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between lh-condensed cart-item">
+                                                    <div>
+                                                        <h6 class="my-0">Product name</h6>
+                                                        <small class="text-muted">Brief description</small>
+                                                    </div>
+                                                    <input type="checkbox"
+                                                        style="display: block; width: 50px;height: 50px;position: relative;opacity: 1;"
+                                                        checked="true">
+                                                    <span class="text-muted productCost">$12</span>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between lh-condensed cart-item">
+                                                    <div>
+                                                        <h6 class="my-0">Second product</h6>
+                                                        <small class="text-muted">Brief description</small>
+                                                    </div>
+                                                    <input type="checkbox"
+                                                        style="display: block; width: 50px;height: 50px;position: relative;opacity: 1;"
+                                                        checked="true">
+                                                    <span class="text-muted productCost">$8</span>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between lh-condensed cart-item">
+                                                    <div>
+                                                        <h6 class="my-0">Third item</h6>
+                                                        <small class="text-muted">Brief description</small>
+                                                    </div>
+                                                    <input type="checkbox"
+                                                        style="display: block; width: 50px;height: 50px;position: relative;opacity: 1;"
+                                                        checked="true">
+                                                    <span class="text-muted productCost">$5</span>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between lh-condensed cart-item">
+                                                    <div>
+                                                        <h6 class="my-0">Fourth item</h6>
+                                                        <small class="text-muted productCost">Brief description</small>
+                                                    </div>
+                                                    <input type="checkbox"
+                                                        style="display: block; width: 50px;height: 50px;position: relative; opacity: 1;"
+                                                        checked="true">
+                                                    <span class="text-muted productCost">$5</span>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between">
+                                                    <span>Total (USD)</span>
+                                                    <strong>$<span class="totalBill">20</span></strong>
+                                                </li>
+                                            </ul>
+                                            <form>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Promo code">
+                                                    <div class="input-group-append">
+                                                        <button type="submit" class="btn btn-primary">Redeem</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+
+            <div class="section-full bg-gray content-inner choose-us step5" style="display: none;" id="features">
+                <div class="container-fluid">
+                    <div class="wl-bynw" style="position: absolute;top: 2%;">
+                        <a href="javascript:void(0)" class="site-button shadow radius-xl step5-back">&longleftarrow;</a>
+                    </div>
+                    <div style="margin-top: 7%;" class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="pagespeed col-lg-12 col-md-12">
+                                            <div class="info" style="
+                                            display: block;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                        ">
+                                                <p class="score text-center"> <span>
+                                                        Total For Order:
+                                                        <br />
+                                                        $40
+                                                    </span></p>
+                                            </div>
+
+                                        </div>
+                                        <div class="pagespeed box" style="margin-left: auto;
+                                        margin-right: auto;">
+                                            <div class="icon"><img src="welcome/images/rocket2.png" alt=""></div>
+                                            <div class="info">
+                                                <h4 class="dz-title">Confirm Order</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- JAVASCRIPT FILES ========================================= -->
+    <script src="welcome/js/combining.js"></script><!-- JQUERY.MIN JS -->
+    <script>
+        $('#orderNow').click(() => {
+            $('.step1').hide();
+            $('.step2').show(500);
+        })
+
+        $('.core-features').click(() => {
+            $('.step2').hide();
+            $('.step3').show(500);
+        });
+
+        $('.addToCart').click((event) => {
+            let items = localStorage.getItem('items');
+            items = items || 0;
+            const element = event.target;
+            if ($(element).hasClass('btn-primary')) {
+                $(element).removeClass('btn-primary').addClass('btn-success');
+                $(element).text('Added');
+                items++;
+            } else {
+
+                $(element).removeClass('btn-success').addClass('btn-primary');
+                $(element).text('Add to Order');
+                if (items > 0) {
+                    items--;
+                }
+            }
+            localStorage.setItem('items', items);
+        });
+
+        function setBill() {
+            let totalBill = 0;
+
+            $('.cart-item').each((inde, element) => {
+
+                let input = $($(element).children('input[type="checkbox"]')[0]).is(":checked");
+                if (input) {
+                    totalBill += Number($($(element).children('.productCost')[0]).text().split('$')[1]);
+                }
+            })
+            $('.totalBill').text(totalBill);
+        }
+
+        setBill();
+
+        $('input[type="checkbox"]').change(() => {
+            setBill();
+        });
+
+        $('.checkout').click(() => {
+            $('.step1').hide();
+            $('.step2').hide();
+            $('.step3').hide();
+            $('.step4').show(500);
+        });
+
+        $('.step3-back').click(() => {
+            $('.step1').hide();
+            $('.step4').hide();
+            $('.step3').hide();
+            $('.step2').show(500);
+        })
+
+        $('.step4-back').click(() => {
+            $('.step1').hide();
+            $('.step4').hide();
+            $('.step3').hide();
+            $('.step2').show(500);
+        })
+
+        $('.step5-back').click(() => {
+            $('.step1').hide();
+            $('.step2').hide();
+            $('.step3').hide();
+            $('.step4').show(500);
+            $('.step5').hide();
+        })
+
+        $('.order-confirm').click(() => {
+            $('.step1').hide();
+            $('.step2').hide();
+            $('.step3').hide();
+            $('.step4').hide();
+            $('.step5').show(500);
+        })
+
+    </script>
+</body>
+
+</html>
